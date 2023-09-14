@@ -6,24 +6,6 @@ function getLastElement(arr) {
     }
 }
 
-function isPalindrome(word) {
-    word = word.toLowerCase();
-    const reversedWord = word.split('').reverse().join('');
-    return word === reversedWord;
-}
-
-function capitalizeWords(sentence) {
-    const words = sentence.split(' ');
-    const capitalizedWords = [];
-
-    for (let i = 0; i < words.length; i++) {
-        const word = words[i];
-        capitalizedWords.push(word.charAt(0).toUpperCase() + word.slice(1));
-    }
-
-    return capitalizedWords.join(' ');
-}
-
 function lengthOfLongestWord(sentence) {
     const words = sentence.split(' ');
     let maxLength = 0;
